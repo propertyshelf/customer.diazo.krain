@@ -16,12 +16,13 @@ Description: Introduction
         Changelog
         =========
         
-        1.0dev (unreleased)
+        0.1dev (unreleased)
         -------------------
         
         - Initial release
         
-Keywords: plone diazo vanilla
+        
+Keywords: plone diazo customer krain
 Platform: UNKNOWN
 Classifier: Development Status :: 4 - Beta
 Classifier: Environment :: Web Environment
