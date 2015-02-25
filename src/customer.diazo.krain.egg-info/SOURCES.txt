@@ -1,0 +1,15 @@
+README.txt
+setup.cfg
+setup.py
+src/customer/__init__.py
+src/customer.diazo.krain.egg-info/PKG-INFO
+src/customer.diazo.krain.egg-info/SOURCES.txt
+src/customer.diazo.krain.egg-info/dependency_links.txt
+src/customer.diazo.krain.egg-info/entry_points.txt
+src/customer.diazo.krain.egg-info/namespace_packages.txt
+src/customer.diazo.krain.egg-info/not-zip-safe
+src/customer.diazo.krain.egg-info/requires.txt
+src/customer.diazo.krain.egg-info/top_level.txt
+src/customer/diazo/__init__.py
+src/customer/diazo/krain/__init__.py
+src/customer/diazo/krain/interfaces.py

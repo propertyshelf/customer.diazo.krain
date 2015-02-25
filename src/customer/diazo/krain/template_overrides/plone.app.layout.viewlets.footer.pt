@@ -1,0 +1,8 @@
+<div i18n:domain="plone"
+     id="portal-footer">
+          <p>
+               Powered by <a href="http://propertyshelf.com" target="_blank">propertyshelf.com</a>
+          </p>
+          
+
+</div>
