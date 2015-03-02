@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    > 
+
+    <replace css:theme-children="#personaltool-menu" 
+        css:content-children="#portal-personaltools ul"/>
+    <replace css:theme-children="#personaltool-menuheader" 
+        css:content-children="#portal-personaltools .actionMenuHeader a"/>
+    <replace css:theme-children="#secondary-nav" css:if-content="#anon-personalbar">
+        <li><xsl:copy-of css:select="#personaltools-login"/></li>
+    </replace>
+    <replace 
+        css:theme-children="#tri-nav"
+        css:content="#portal-languageselector li"
+    />
+
+    <drop
+        css:theme="#fullscreen-slider"
+        css:if-not-content="#viewlet-above-content .carousel"
+    />
+    
+    <drop
+        css:content=".portletQuickSearch .form-row-object-type"
+    />
+    
+    <drop
+        css:content=".portletQuickSearch .form-row-sizes" 
+    />
+
+    <drop css:content="#viewlet-above-content .carousel"/>
+    
+    <append 
+        css:content="#viewlet-above-content > div.carousel" 
+        css:theme="#fullscreen-slider"  
+        method="raw"
+    />
+
+    <drop css:content=".titlecontact.toolkit"/>
+    
+    <drop css:content="#portal-globalnav"/> 
+    
+    <append 
+        css:content=".titlecontact.toolkit " 
+        css:theme="#header"  
+        method="raw"
+    />
+    
+    <append 
+        css:content-children="#viewlet-above-content > .carouselWrapper"
+        css:theme="#feature-listing-above-footer"
+        method="raw"
+    />
+    
+    <drop
+        css:theme="#feature-listing-slider"
+        css:if-not-content=".carouselWrapper"
+    />
+    
+    <drop
+        css:content=".carouselWrapper"
+    />
+    
+
+    
+    </rules>

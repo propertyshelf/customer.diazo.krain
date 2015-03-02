@@ -3,176 +3,77 @@
     xmlns="http://namespaces.plone.org/diazo"
     xmlns:css="http://namespaces.plone.org/diazo/css"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
-
-
-<rules css:if-content="#visual-portal-wrapper">
-    <theme href="/++theme++ps.diazo.vanilla/index.html" />
-    <!-- Header Rules -->
-    <xi:include href="/++theme++ps.diazo.vanilla/rules/header-rules.xml"/>
-    <!-- Viewlet Rules -->
-    <xi:include href="/++theme++ps.diazo.vanilla/rules/viewlet-rules.xml"/>
-    <!-- Portlet Rules -->
-    <xi:include href="/++theme++ps.diazo.vanilla/rules/portlet-rules.xml"/>
-    <!-- Content Rules -->
-    <xi:include href="/++theme++ps.diazo.vanilla/rules/content-rules.xml"/>
-    <!--Footer Rules -->
-    <xi:include href="/++theme++ps.diazo.vanilla/rules/footer-rules.xml"/>
-</rules>
-
-
-    <!-- Apply the following rules to standard Plone pages -->
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    >
+    
+    <theme 
+        href="krain/krain-base.html" 
+        css:if-content="#visual-portal-wrapper"
+    />
+      
     <rules css:if-content="#visual-portal-wrapper">
+    
+    <copy
+        attributes="class"
+        css:content="#portal-personaltools"
+        css:theme=".dropdown-menu li"
+    />
+    
+    <copy
+        attributes="class"
+        css:content="body"
+        css:theme="div#globalwrapper"
+    />
+    
+    <replace
+        css:theme="div#header .header-content"
+        css:content="div#portal-top"
+    />
+    
+    <replace
+        css:theme-children="div#main #content-columns"
+        css:content="div#portal-columns"
+    />
+    
+    <drop
+        css:content="#portal-breadcrumbs"
+    />
+    
+    <prepend
+        css:theme="div#main #content-columns"
+        css:content="#portal-breadcrumbs"
+        method="raw"
+    />
+    
+    <replace
+        css:theme-children="div#footer-wrapper"
+        css:content="div#portal-footer"
+    />   
+    
+    <replace 
+        theme="/html/head/title" 
+        content="/html/head/title" 
+    />      
+    
+    <prepend theme="/html/head" content="/html/head/base"/>
 
-        <drop
-            css:theme=".toggle"
-        />
-        
-        <rules css:if-content="#portal-personaltools .actionMenuHeader">
-            <prepend
-                css:theme=".account.pull-right"
-                css:content="#portal-personaltools-wrapper"
-            />
-        </rules>
-        
-        <!-- Add Menu bar dont work : Gun -->
-         <rules css:if-content="#portal-personaltools .actionMenuHeader">
-            <prepend
-                css:theme="#wrapper-inner #content"
-                css:content="#portal-column-content .documentEditablet #edit-bar"
-            />    
-        </rules>  
-        
-        <drop
-            css:content="#LSResult #livesearchLegend"/>
-        
-        <drop
-            css:content=".searchSection"
-        />
-        
-        
-        <replace
-            css:content="#portal-languageselector"
-            css:theme-children=".language-switcher"
-        />
-  
-        
-        <!-- porlet bold : start -->
-            <rules css:if-content="#portal-column-one">
-                <rules css:if-content="#portal-column-two">
-                <replace
-                css:theme-children=".portlet-both #maincontent"
-                css:content-children="#portal-column-content"
-                />
-                <drop
-                    css:theme=".no-portlet, .portlet-right, .portlet-left"
-                />
-            </rules>
-            </rules>
-            <rules css:if-content="#portal-column-one">
-                <replace
-                css:theme-children="#portlet-right .inner-portlet-right"
-                css:content-children="#portal-column-two"
-                css:if-content="#portal-column-two"
-                />
-            </rules>
-            <rules css:if-content="#portal-column-two">
-                <replace
-                    css:theme-children="#portlet-left .inner-portlet-left"
-                    css:content-children="#portal-column-one"
-                    css:if-content="#portal-column-one"
-                />            
-            </rules>
-        <!-- Portlet bold : END -->
-        <!-- No portlet : Start -->
-        <rules css:if-not-content="#portal-column-one">
-            <rules css:if-not-content="#portal-column-two">
-                <replace
-                    css:theme-children=".no-portlet #maincontent"
-                    css:content-children="#portal-column-content"
-                />
-                <drop
-                    css:theme=".portlet-both, .portlet-right, .portlet-left"
-                />
-            </rules>
-        </rules>
-        <!-- No Portlet : End -->
-        <!-- PS Silder : Start -->
-        <rules css:if-content=".ps_slider.aboveContent">
-            <drop
-                css:theme=".ps_slider_wrapper.ps-left, .ps_slider_wrapper.ps-right, .ps_slider_wrapper.aboveMenu, .ps_slider_wrapper.ps_slider_abovecolumns"
-            />
-        </rules>
-        <rules css:if-content=".ps_slider.portletLeft">
-            <prepend
-                css:theme=".ps_slider_wrapper.ps-left"
-                css:content=".ps_slider"
-                method="raw"
-            />
-            <drop
-                css:content=".ps_slider"    
-            />
-            <drop
-                css:theme=".ps_slider_wrapper.ps-right, .ps_slider_wrapper.aboveContent, .ps_slider_wrapper.aboveMenu, .ps_slider_wrapper.ps_slider_abovecolumns"
-            />
-        </rules>
-        <rules css:if-content=".ps_slider.portletRight">
-            <prepend
-                css:theme=".ps_slider_wrapper.ps-right"
-                css:content=".ps_slider"
-                method="raw"
-            />
-            <drop
-                css:content=".ps_slider"
-            />
-            <drop
-                css:theme=".ps_slider_wrapper.ps-left, .ps_slider_wrapper.aboveContent, .ps_slider_wrapper.aboveMenu, .ps_slider_wrapper.ps_slider_abovecolumns"
-            />
-        </rules>
-        <rules css:if-content=".ps_slider.aboveMenue">
-            <prepend
-                css:theme=".ps_slider_wrapper.aboveMenu"
-                css:content=".ps_slider"
-                method="raw"
-            />
-            <drop
-                css:content=".ps_slider"
-            />
-            <drop
-                css:theme=".ps_slider_wrapper.ps-left, .ps_slider_wrapper.ps-right, .ps_slider_wrapper.aboveContent, .ps_slider_wrapper.ps_slider_abovecolumns"
-            />
-        </rules>
-        <rules css:if-content=".ps_slider.aboveColumns">
-            <prepend
-                css:theme=".ps_slider_wrapper.ps_slider_abovecolumns .abovecolumns"
-                css:content=".ps_slider"
-                method="raw"
-            />
-            <drop
-                css:content=".ps_slider"
-            />
-            <drop
-                css:theme=".ps_slider_wrapper.ps-left, .ps_slider_wrapper.ps-right, .ps_slider_wrapper.aboveContent, .ps_slider_wrapper.aboveMenu"
-            />
-        </rules>
-        <rules css:if-content=".ps_slider.coverIntegrated">
-            <drop
-                css:theme=".ps_slider_wrapper"
-            />
-            
-        </rules>
-        <rules css:if-not-content=".ps_slider">
-            <drop
-                css:theme=".ps_slider_wrapper"
-            />
-        </rules>
+    <after css:theme="meta[http-equiv='X-UA-Compatible']"
+    content="/html/head/link | /html/head/style | /html/head/script | /html/head/meta" />
+
+    <replace css:theme="#logo" css:content="#portal-logo"/>
+    
+    <replace css:theme-children="#nav">
+        <xsl:for-each css:select="#portal-globalnav > li">
+            <xi:include href="navigation-rules.xml"/>
+        </xsl:for-each>
+    </replace>
+
+    <append css:theme=".footer" css:content-children="#portal-footer-wrapper"/>
+    <append css:theme=".footer" css:content="div#visual-portal-wrapper > div.row > script"/>
+
+    <xi:include href="facetednavigation-rules.xml"/>
+    <xi:include href="krain/krain-rules.xml"/>
+    <append css:theme="#site-scripts" css:content="#portal-footer-wrapper > div > script"/>
+    
     </rules>
-
-<!-- Move PS Slider into cover Tile -->
-<replace css:content=".tile.ps_coverintegrated" css:if-content=".ps_slider.coverIntegrated">
-    <xsl:copy-of select="//div[@class='featured-listing-top ps_slider top coverIntegrated']" />
-    <xsl:apply-templates mode="raw" />
-</replace>
-<drop css:content="#viewlet-above-content .ps_slider.coverIntegrated" css:if-content=".tile.ps_coverintegrated" />
-
 </rules>
