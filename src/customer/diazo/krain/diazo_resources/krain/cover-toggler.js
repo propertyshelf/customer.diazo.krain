@@ -1,6 +1,6 @@
 function SwitchClick(){
-    $('.top-carousel').after('<button class="switch_button">&nbsp;</div');
-    $('.top-carousel').after('<button class="global_switch_button">&nbsp;</div');
+    $('.carousel-image-map').after('<button class="switch_button">&nbsp;</div');
+    $('.carousel-image-map').after('<button class="global_switch_button">&nbsp;</div');
     $('.global_switch_button').hide();
     if($('.switch_button').length>0){   
     $('.switch_button').click(function(){
@@ -145,6 +145,13 @@ function SouthPacificBack(){
         $('.switch_button').fadeToggle();
     });
 }
+
+function Add_class_for_map(){
+    
+    $('.nicoya_hide, .centralpacific_hide, .northernlowlands_hide, .southpacific_hide, .caribbean_hide, .guanacaste_hide, .centralvalleyandhighlands_hide').addClass('cover_full_width');
+    $('.centralpacific_hide .tile-content, .centralvalleyandhighlands_hide .tile-content, .guanacaste_hide .tile-content, .caribbean_hide .tile-content, .southpacific_hide .tile-content, .nicoya_hide .tile-content, .northernlowlands_hide .tile-content').addClass('carousel-image-map');
+}
+
 function sync_default_hide(){
     var parent_class =$('.toggler_default').parent().attr('class');
     $( ".toggler_map_hide" ).parent().attr('class', parent_class);
@@ -178,8 +185,9 @@ $(document).ready(function(){
      $('.centralvalleyandhighlands_hide').hide();
      $('.caribbean_hide').hide();
      $('.southpacific_hide').hide();
-    if($('.toggler_default').length>0){       
-        SwitchClick();
+    if($('.carousel-image-map').length>0){       
+        $('.carousel-image-map').addClass('toggler_map_hide');
+        Add_class_for_map();
         sync_default_hide();  
         NorthernLowlands();
         Guanacaste();

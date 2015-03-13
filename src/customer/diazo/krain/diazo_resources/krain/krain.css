@@ -1,5 +1,199 @@
+.main-cb-slideshow .cb-slideshow img.s-fade  {
 
-#globalwrapper #container #box #fullbgnav .navbar .navbar-inner #navibar #topnav-collapse ul#nav {
+}
+.cb-slideshow {
+    position: relative;
+    height: 491px;
+}
+.main-cb-slideshow .cb-slideshow img {
+    height: auto;
+    width: 100%;
+    min-height: 458px;
+    min-width: 1280px;
+    position: absolute;
+}
+.main-cb-slideshow {
+    overflow: hidden; 
+    max-height: 458px;
+}
+.template-compose .carousel-image-map , .template-compose .carousel-search-property {
+    position: static;
+    margin: 0;
+    padding: 0;
+}
+.main-cb-slideshow .cb-slideshow img:first-child {
+    display:block;
+}
+.main-cb-slideshow .cb-slideshow img.images_full_width {
+    width: 100%;
+}
+body #content .width-5.position-10 {
+    height: auto;
+}
+body #content .width-5.position-5 {
+    height: auto;
+}
+body #content .row {
+    margin: 0 auto;
+}
+.template-layoutedit.portaltype-collective-cover-content .cover-tile, .template-compose.portaltype-collective-cover-content .tile {
+    display: block !important;
+}
+.main-advanced-search {
+    margin-left: 82px;
+    margin-top: 5px;
+}
+.carousel-search-property #form {
+    margin: 0;
+    padding: 0;
+}
+/*Search In Carousel - Start*/
+.carousel-search-property .main-advanced-search #form-buttons-search-advanced{
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    box-shadow: none;
+    font-size: 14px !important;
+    padding: 0;
+    margin: 0;
+    position: static;
+    text-decoration: underline;
+    transform: none;
+}
+.carousel-search-property .formControls{
+    margin: 0;
+}
+.carousel-search-property .formControls #form-buttons-search{
+    background-color: #ff0000;
+    border: medium none;
+    border-radius: 0;
+    color: #fff;
+    width: 100%;
+    font-size: 16px;
+    margin: 0;
+    padding: 5px 14px 3px;
+}
+.carousel-image-map {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 232px;
+    right: 375px;
+    width: 268px;
+    height: 328px !important;
+    padding: 11px 26px;
+}
+.carousel-image-map h3 {
+    text-transform: uppercase;
+    font-weight: normal;
+    position: absolute;
+    top: 11px;
+    font-size: 18px;
+    color: #fff;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+.carousel-image-map p {
+    position: absolute;
+    bottom: 9px;
+    font-size: 14px;
+    color: #fff;
+    width: 52%;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+}
+.carousel-search-property {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 232px;
+    left: 307px;
+    width: 268px;
+    height: 328px;
+    padding: 11px 26px;
+}
+.carousel-search-property h3 {
+    font-weight: normal;
+    color: #fff;
+    margin-bottom: 4px;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+}
+.carousel-search-property select{
+    color: #959595;
+    font-size: 16px;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+}
+.carousel-search-property select option {
+    color: #959595;
+    font-size: 16px;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+}
+.carousel-search-property .carousel-price {
+    width: 100%;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+}
+.carousel-search-property .main-caurousel-price #formfield-form-widgets-price_min,
+.carousel-search-property .main-caurousel-price #formfield-form-widgets-price_max {
+    display: inline-block;
+    width: 43%;
+}
+
+.carousel-search-property #formfield-form-widgets-price_max input, 
+.carousel-search-property #formfield-form-widgets-price_min input{
+    width: 94%;
+    padding-left: 8px;
+    color: #959595;
+    font-size: 16px;
+    border-radius: 0;
+}
+.carousel-search-property #formfield-form-widgets-beds select,
+.carousel-search-property #formfield-form-widgets-baths select{
+    width: 44%;
+}
+.carousel-search-property #formfield-form-widgets-price_min,
+.carousel-search-property #formfield-form-widgets-beds select#form-widgets-beds-min,
+.carousel-search-property #formfield-form-widgets-baths select#form-widgets-baths-min{
+    margin-right: 30px;
+}
+.carousel-price,
+.carousel-search-property #formfield-form-widgets-beds label,
+.carousel-search-property #formfield-form-widgets-baths label {
+    color: #fff;
+    font-size: 16px;
+}
+.carousel-search-property div select {
+    padding: 3px 0 3px 4px;
+    margin-bottom: 4px;
+    height: 27px;
+}
+#formfield-form-widgets-beds {
+    margin-top: 3px;
+}
+#formfield-form-widgets-baths {
+    margin-top: 1px;
+}
+.carousel-price {
+    margin-top: 1px;
+}
+/*Search In Carousel - End*/
+/*Carousel - Start*/
+.cover_full_width {
+
+}
+.main-cb-slideshow {
+    position: relative;
+}
+
+/*Carousel - End*/
+#footer-wrapper .row {
+    width: 100%;
+}
+#doormat-container .doormatColumn{ 
+    padding:1% 0;
+}
+.footer #doormat-container .column-0{
+    width:100%;   
+}
+.footer #doormat-container .column-1{
+    width:100%;  
+    background-color: #222222;
+}
+#globalwrapper.portaltype-plone-mls-listing-listing #container #box #fullbgnav .navbar .navbar-inner #navibar #topnav-collapse ul#nav {
     z-index: 1101;
 }
 #g-iconbar .icon-facebook {
@@ -61,7 +255,7 @@
     width: auto;
 }
 #nav {
-    width: 83%;
+    width: 87%;
 }
 body #fullbgnav {
     position: absolute;
@@ -97,7 +291,7 @@ input[type="radio"], input[type="checkbox"] {
     display: inline;
 }
 #main .pfg-form .label{
-	color: #000000;
+    color: #000000;
     font-size: 13px;
     font-weight: bold;
     line-height: 18px;
@@ -144,8 +338,7 @@ ul.submenu ul{
     left:auto;
     width:auto;
 }
-.state-published{
-    color:#000 !important;   
+body a.state-published{  
 }
 #nav li.dropdown ul.dropdown-menu{
     float:left;    
@@ -296,7 +489,7 @@ a:hover{
     color:#ff0000;
 }
 .portaltype-collective-cover-content #fullscreen-slider{
-    display:none;   
+    display: none;
 }
 #main #fullscreen-slider .carousel .carousel-text{
     bottom: 0;
@@ -427,6 +620,7 @@ small{
     background: #f1f1f1;
     line-height: 29px;
     overflow: auto;
+    border-bottom: 2px solid #222;
     width: 100%;
 }
 .toolkit.viewlet.plugin{
@@ -484,17 +678,12 @@ ul.submenu{
     padding: 8px;
     position: absolute;
     white-space: nowrap;
-    -ms-transform: rotate(90deg);  /* Microsoft - Internet Explorer 9 */ 
-    -moz-transform: rotate(90deg);  /* Mozilla - Firefox 3.5+ */ 
-    -o-transform: rotate(90deg);  /* Opera 10.5+ */ 
-    -webkit-transform: rotate(90deg); /* Chrome, Safari */ 
-    transform: rotate(90deg);   /* W3C - not really reqd yet */
 }
 .portaltype-collective-cover-content #content{
     margin:0;   
 }
 #nav{
-    font-family: 'Helvetica', serif;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
     text-transform: uppercase;
 }
 ul#portal-languageselector{
@@ -517,7 +706,7 @@ ul#portal-languageselector li a{
     height: 23px;
     line-height: 21px;
     width: 110px;
-    font-family: "Helvetica",serif;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
     font-size:16px;
     text-align: left;
     font-weight: normal;
@@ -536,7 +725,7 @@ ul#portal-languageselector li a{
 ul#portal-languageselector li.currentLanguage a{
     color: #555;
     float: left;
-    font-family: "Helvetica",serif;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
     font-size: 16px;
     height: 23px;
     line-height: 23px;
@@ -675,7 +864,7 @@ img.image-left, img.image-right, .captioned img{
     margin-bottom:0;   
 }
 .state-private{
-    color:#fff !important;   
+
 }
 #fullscreen-slider{
     margin:0 auto;   
@@ -711,14 +900,32 @@ img.image-left, img.image-right, .captioned img{
     font-size:14px;
     font-family: 'Roboto', sans-serif;
 }
+#doormat-container .doormatColumn .doormatSection .doormatSectionBody{
+    line-height: 23px;
+}
 #doormat-container dl{
-    overflow:auto;   
     margin: 0;
 }
 .column-0 .doormatSection .doormatSectionBody{
     float: left;
-    margin-right: 5%;
+    margin-left: 15px !important;
     text-align: center;
+    width: 14%;
+}
+#doormat-container .column-0 dl {
+    margin: 0 15%;
+}
+#doormat-container .column-1 dl {
+    margin: 0 10%;
+}
+#footer-wrapper #footer {
+    background-color: #ff0000;
+}
+#footer-inner .col-md-12.copyright p{
+    margin: 13px 0;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
 }
 .column-0 .doormatSection .doormatSectionBody:first-of-type{
     margin-top: 2%;
@@ -767,7 +974,7 @@ img.image-left, img.image-right, .captioned img{
 }
 #portal-personaltools a{
     color:#ccc;
-    font-family: 'Helvetica', serif;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
     font-size:14px;
     z-index: 9001;
 }
@@ -797,6 +1004,7 @@ img.image-left, img.image-right, .captioned img{
     white-space: normal;   
     line-height:22px;
     padding:0 5%;
+    border-radius: 0 !important;
     width: auto !important;
 }
 .caret{
@@ -806,7 +1014,7 @@ img.image-left, img.image-right, .captioned img{
     width:100%;   
     color: #fff;
     text-align: left;
-    font-family: 'Helvetica', serif;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
     font-size:12px;
 }
 .form-row-tabbed .formTab a span{
@@ -996,7 +1204,6 @@ table.listing tr th{
 .label, .badge {
     background: none;
     font-size: 13px;
-    color:#ffffff;
 }
 .listing-summary .label,.listing-summary  .badge {
     background: none;
@@ -1808,8 +2015,17 @@ dl.portlet ul.navTree li a:hover{
 #doormat-container .doormatSectionBody a {
 	color:#FFFFFF;
 }
+.dropdown-menu li a.state-published {
+    color:#FFFFFF !important;
+}
 #doormat-container .column-1 p{
 	margin: 0;
+    font-size: 18px;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+}
+#doormat-container .column-1 p span{
+    font-weight: 100;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
 }
 #doormat-container .column-1 p.small-text{
     font-size:11px   
@@ -1846,7 +2062,7 @@ dl.portlet ul.navTree li a:hover{
     box-shadow: 0 0 1em #6e6e6e;
     text-transform: uppercase;
 }
-#portal-personaltools ul {
+body #globalwrapper #portal-personaltools ul {
     margin: 0;
     background: #ddd;
 }
@@ -1864,10 +2080,10 @@ dl.portlet ul.navTree li a:hover{
     letter-spacing: 0;
 }
 #content a:hover, dl.portlet a:hover{
-    color:#fff !important;   
+
 }
 #content ul.configlets li a{
-    color:#FFFFFF !important  
+    
 }
 .agentprofile-wrapper{
     border-radius: 15px;
@@ -2049,7 +2265,7 @@ dl.portlet ul.navTree li a:hover{
 .centralvalleyandhighlands_hide ,
 .caribbean_hide ,
 .southpacific_hide{
-    height: 332px;
+
 }
 .toggler_map_hide h2{
     color: #000000;
@@ -2061,14 +2277,6 @@ dl.portlet ul.navTree li a:hover{
     margin-top: -95px;
     width: 190px;
 }
-.toggler_map_hide p{
-    color: #000000;
-    font-family: 'rancho',cursive;
-    font-size: 18px !important;
-    position: absolute;
-    right: 13%;
-    top: 4.5%;
-}
 .northernlowlands_hide h2,
 .guanacaste_hide h2,
 .nicoya_hide h2,
@@ -2076,12 +2284,14 @@ dl.portlet ul.navTree li a:hover{
 .centralvalleyandhighlands_hide h2,
 .caribbean_hide h2,
 .southpacific_hide h2{
-    color: #000000;
-    font-family: 'rancho',cursive;
-    margin-left: 30px;
-    margin-top: -45px;
+    color: #fff;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    margin-left: -3px;
+    margin-top: -335px;
     font-weight: normal;
+    font-size: 18px;
     line-height: normal;
+    text-transform: uppercase;
 }
 #nav li a,
 #nav li.active a,
@@ -2103,23 +2313,48 @@ dl.portlet ul.navTree li a:hover{
     width:116px;
     color:#ffffff !important;
 }
-@media (min-width: 1200px){
-    #form-buttons-search-advanced{
-        left: 78.5%;
-        top: 72.5%;
+@media (min-width: 1601px){ 
+    body .carousel-search-property {
+        left: 41% !important;
+    }
+    body .carousel-image-map { 
+        right: 41% !important;
+    }
+}
+@media (min-width: 1501px){ 
+    body .carousel-search-property {
+        left: 29%;
+    }
+    body .carousel-image-map { 
+        right: 29%;
+    }
+}
+@media (min-width: 1401px) and (max-width:1500px){ 
+    body .carousel-search-property {
+        left: 25%;
+    }
+    body .carousel-image-map { 
+        right: 25%;
+    }
+}
+@media (min-width: 1200px) and (max-width:1400px){ 
+    .main-cb-slideshow .cb-slideshow img {
+        width: 100%;
+    }
+    .carousel-search-property {
+        left: 23%;
+    }
+    .carousel-image-map {
+        right: 23%;
     }
     .Quicksearchbutton{
         left: 74.5%;
         bottom: 13%;
     }
     .footer{
-        background: url("krain/img/NEW_krain_footer_bg.png");
         background-size:cover;
         background-repeat:no-repeat;
         background-position:38%;
-    }
-    .column-0 .doormatSection .doormatSectionBody{
-        width: 25%;
     }
     #nav li.dropdown ul.dropdown-menu li a{   
         height:auto;
@@ -2216,8 +2451,8 @@ dl.portlet ul.navTree li a:hover{
     .centralvalleyandHighlandsback,
     .caribbeanback,
     .southpacificback{
-        left: 88.5%;
-        top: 1%;
+        left: 86.5%;
+        top: 1.5%;
     }
     .portletCarouselWrapper a.next{
         left: 88%;
@@ -2255,12 +2490,6 @@ dl.portlet ul.navTree li a:hover{
         width: 50%;
         padding: 1%;   
     }
-    .footer #doormat-container .column-0{
-        width:45%;   
-    }
-    .footer #doormat-container .column-1{
-        width:55%;   
-    }
     .portletQuickSearch select {
         width: 40%;
     }
@@ -2287,9 +2516,6 @@ dl.portlet ul.navTree li a:hover{
     .form-row-listing-type .field span.option {
         width: 49%;
     }
-    #doormat-container .doormatColumn{ 
-        padding:1% 0;
-    }
     #portal-column-content.width-full #content .listing-summary figure {
         width: 15%;
         margin-top: 0.3em;
@@ -2301,7 +2527,7 @@ dl.portlet ul.navTree li a:hover{
     }
     #g-iconbar{
         top: 19px;  
-        right: -99px;
+        right: -89px;
     }
     div.width-9{
         width:60%;   
@@ -2339,25 +2565,29 @@ dl.portlet ul.navTree li a:hover{
     }
 }
 @media (min-width: 980px) and (max-width:1199px){ 
-    #form-buttons-search-advanced{
-        left: 75%;
-        top: 72.5%; 
+    .main-cb-slideshow .cb-slideshow img {
+        width: 100%;
+    }
+    .carousel-search-property {
+        left: 15%;
+        top: 232px;
+    }
+    .carousel-image-map {
+        right: 15%;
+        top: 232px;
     }
     .Quicksearchbutton{
         left: 70.5%;
         bottom: 13%;
     }
-    .footer{
-        background: url("krain/img/NEW_krain_footer_bg.png");
-        background-size:cover;
-        background-repeat:no-repeat;
-        background-position:35%;
-    }
     #nav li.dropdown ul.dropdown-menu li a{   
         height:auto;
     }
-    .column-0 .doormatSection .doormatSectionBody{
-        width: 23%;
+    #doormat-container .column-0 dl {
+        margin: 0 10%;
+    }
+    .column-0 .doormatSection .doormatSectionBody {
+        width: 14%;
     }
     .agent-social{  
         float:left;
@@ -2507,12 +2737,6 @@ dl.portlet ul.navTree li a:hover{
         margin-left: -33%;   
         height: 439px;
     }
-    .footer #doormat-container .column-0{  
-        height: auto;
-    }
-    .footer #doormat-container .column-1{
-        width:45%;   
-    }
     #portal-column-content #listing-info {
         width: 40%;
     }
@@ -2533,12 +2757,9 @@ dl.portlet ul.navTree li a:hover{
         margin-left: 1%;
         width: 48%;
     }
-    #doormat-container .doormatColumn{ 
-        padding:0;
-    }
     #g-iconbar{  
         top: 19px;  
-        right: -99px;
+        right: -89px;
     }
     #nav{
         float:left;
@@ -2588,13 +2809,21 @@ dl.portlet ul.navTree li a:hover{
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {   
+    .main-cb-slideshow .cb-slideshow img {
+        width: 1020px !important;
+        max-width: none;
+    }
+    .carousel-search-property {
+        left: 12%;
+        top: 232px;
+    }
+    .carousel-image-map {
+        right: 12%;
+        top: 232px;
+    }
     body #fullbgnav {
         left: -5px;
         top: 108px;
-    }
-    #form-buttons-search-advanced{
-        right: -5%;
-        top: 72.5%; 
     }
     .Quicksearchbutton{
         right: -6%;
@@ -2782,7 +3011,11 @@ dl.portlet ul.navTree li a:hover{
     }
     .column-0 .doormatSection .doormatSectionBody{
         margin-right:0;
-        width:33%;
+        width:30%;
+    }    
+    #doormat-container .column-0 dl {
+        clear: none;
+        margin: 0 10%;
     }
     .column-0 .doormatSection .doormatSectionBody p{
         text-align:center;
@@ -2841,7 +3074,7 @@ dl.portlet ul.navTree li a:hover{
     #g-iconbar{
         top: 19px;
         z-index: 5; 
-        right: -99px;
+        right: -89px;
     }
     #nav{  
         float:none;
@@ -2887,13 +3120,90 @@ dl.portlet ul.navTree li a:hover{
 }
 
 @media (max-width: 880px){
+    .main-cb-slideshow .cb-slideshow img {
+        width: 1020px !important;
+        max-width: none;
+    }
+    .carousel-search-property {
+        left: 6%;
+        top: 232px;
+    }
+    .carousel-image-map {
+        right: 6%;
+        top: 232px;
+    }
     body #header .titlecontact.toolkit{
       display:none;    
     }
     
 }
-
+@media (min-width: 60px) and (max-width: 660px) {
+    .main-cb-slideshow .cb-slideshow img {
+        width: 1020px !important;
+        max-width: none;
+    }
+    .carousel-search-property {
+        left: 1%;
+        width: 89%;
+        top: 232px;
+    }
+    .carousel-search-property #formfield-form-widgets-beds select, .carousel-search-property #formfield-form-widgets-baths select {
+        width: 47%;
+    }
+    .carousel-search-property #formfield-form-widgets-beds select#form-widgets-beds-min, .carousel-search-property #formfield-form-widgets-baths select#form-widgets-baths-min {
+        margin-right:6%;
+    }
+    .carousel-search-property #formfield-form-widgets-price_max input, .carousel-search-property #formfield-form-widgets-price_min input {
+        width: 100%;
+    }
+    .carousel-search-property .main-caurousel-price #formfield-form-widgets-price_min, .carousel-search-property .main-caurousel-price #formfield-form-widgets-price_max {
+        width: 45.5%;
+    }
+    .main-advanced-search {
+        margin-left: 39%;
+        margin-top: 2.3%;
+    }
+  
+}
 @media (min-width: 600px) and (max-width: 767px){
+    .carousel-search-property #formfield-form-widgets-price_max input, .carousel-search-property #formfield-form-widgets-price_min input {
+        width: 98%;
+    }
+    .carousel-search-property #formfield-form-widgets-price_min {
+        margin-right: 2.5%;
+    }
+    .carousel-search-property .main-caurousel-price #formfield-form-widgets-price_min, .carousel-search-property .main-caurousel-price #formfield-form-widgets-price_max {
+        width: 48%;
+    }
+    .carousel-search-property {
+        left: 0;
+        margin: 0 1.5%;
+        padding: 1% 3%;
+        width: 91%;
+        top: 232px;
+    }
+    .main-advanced-search {
+        margin-left: 42%;
+        margin-top: 0.5%;
+    }
+    .carousel-image-map {
+        top: 232px;
+        display: none;
+        top: 589px;
+        left: 0;
+        margin: 0 1.5%;
+        padding: 1% 3%;
+        width: 91%;
+    }
+    .carousel-search-property #formfield-form-widgets-beds select, .carousel-search-property #formfield-form-widgets-baths select {
+        width: 49%;
+    }
+    .carousel-search-property #formfield-form-widgets-beds select#form-widgets-beds-min, .carousel-search-property #formfield-form-widgets-baths select#form-widgets-baths-min {
+        margin-right: 2%;
+    }
+    .main-cb-slideshow .cb-slideshow {
+        max-height: none;
+    }
     body #fullbgnav {
         left: -4px;
         top: 110px;
@@ -3115,7 +3425,10 @@ dl.portlet ul.navTree li a:hover{
     }
     .column-0 .doormatSection .doormatSectionBody{
         margin-right:0;
-        width:33%;
+        width:30%;
+    }
+    #doormat-container .column-0 dl {
+        margin: 0;
     }
     .column-0 .doormatSection .doormatSectionBody p{
         text-align:center;
@@ -3168,7 +3481,7 @@ dl.portlet ul.navTree li a:hover{
     }
     #g-iconbar{
         top: 19px;  
-        right: -99px;
+        right: -89px;
     }
     #nav{
         float:left;
@@ -3207,6 +3520,40 @@ dl.portlet ul.navTree li a:hover{
     }
 }
 @media (min-width: 481px) and (max-width: 599px){
+    .main-cb-slideshow .cb-slideshow {
+        max-height: none;
+    }
+    .carousel-search-property {
+        left: 0;
+        margin: 0 1.5%;
+        padding: 1% 3%;
+        width: 91%;
+        top: 260px;
+    }
+    .carousel-search-property #formfield-form-widgets-beds select, .carousel-search-property #formfield-form-widgets-baths select {
+        width: 47%;
+    }
+    .carousel-search-property #formfield-form-widgets-beds select#form-widgets-beds-min, .carousel-search-property #formfield-form-widgets-baths select#form-widgets-baths-min {
+        margin-right:6%;
+    }
+    .carousel-search-property #formfield-form-widgets-price_max input, .carousel-search-property #formfield-form-widgets-price_min input {
+        width: 98%;
+    }
+    .carousel-search-property .main-caurousel-price #formfield-form-widgets-price_min, .carousel-search-property .main-caurousel-price #formfield-form-widgets-price_max {
+        width: 45.5%;
+    }
+    .main-advanced-search {
+        margin-left: 39%;
+        margin-top: 0.3%;
+    }
+    .carousel-image-map {
+        display: none;
+        top: 585px;
+        left: 0;
+        margin: 0 1.5%;
+        padding: 1% 3%;
+        width: 91%;
+    }
     body #fullbgnav {
         left: 9px;
         top: 84px;
@@ -3420,7 +3767,10 @@ dl.portlet ul.navTree li a:hover{
     }
     .column-0 .doormatSection .doormatSectionBody{
         margin-right:0;
-        width:33%;
+        width:30%;
+    }
+    #doormat-container .column-0 dl {
+        margin: 0;
     }
     .column-0 .doormatSection .doormatSectionBody p{
         text-align:center;
@@ -3491,7 +3841,8 @@ dl.portlet ul.navTree li a:hover{
         width:100%;   
     }
     #g-iconbar{
-        top: 70px;  
+        top: 19px;  
+        right: -89px;
     }
     #nav li{  
         float:none;
@@ -3578,9 +3929,6 @@ dl.portlet ul.navTree li a:hover{
         height: 5px;
         width: 30px;   
     }
-    #portal-personaltools-wrapper,#portal-languageselector,.socialheader{
-        display:none;   
-    }
     #navibar{
         margin-bottom: 20px;    
     } 
@@ -3618,6 +3966,42 @@ dl.portlet ul.navTree li a:hover{
     }
 }
 @media (max-width: 480px){
+    .main-cb-slideshow .cb-slideshow {
+        max-height: none;
+    }
+    .carousel-search-property {
+        left: 0;
+        margin: 0 1.5%;
+        padding: 4% 3%;
+        width: 91%;
+        top: 245px;
+    }
+    .carousel-search-property #formfield-form-widgets-beds select, .carousel-search-property #formfield-form-widgets-baths select {
+        width: 47%;
+    }
+    .carousel-search-property #formfield-form-widgets-beds select#form-widgets-beds-min, .carousel-search-property #formfield-form-widgets-baths select#form-widgets-baths-min {
+        margin-right:6%;
+    }
+    .carousel-search-property #formfield-form-widgets-price_max input, .carousel-search-property #formfield-form-widgets-price_min input {
+        width: 98%;
+    }
+    .carousel-search-property .main-caurousel-price #formfield-form-widgets-price_min, .carousel-search-property .main-caurousel-price #formfield-form-widgets-price_max {
+        width: 45.5%;
+    }
+    .main-advanced-search {
+        margin-left: 39%;
+    }
+    .carousel-image-map {
+        display: none;
+        top: 605px;
+        left: 0;
+        margin: 0 1.5%;
+        padding: 1% 3%;
+        width: 91%;
+    }
+    .carousel-search-property .main-caurousel-price #formfield-form-widgets-price_min {
+        margin-right: 6%;
+    }
     body #fullbgnav {
         left: 15px;
         top: 87px;
@@ -3840,10 +4224,18 @@ dl.portlet ul.navTree li a:hover{
     .footer #doormat-container .column-0{
         width:100%;  
         background:#ffffff;
+        height: 290px;
     }
     .column-0 .doormatSection .doormatSectionBody{
-        margin-right:0;
-        width:33%;
+        margin: 0 !important;
+        width: 50%;
+        height: 90px;
+    }
+    body .column-0 .doormatSection .doormatSectionBody p{
+
+    }
+    #doormat-container .column-0 dl {
+        margin: 0;
     }
     .column-0 .doormatSection .doormatSectionBody p{
         text-align:center;
@@ -3914,8 +4306,8 @@ dl.portlet ul.navTree li a:hover{
         width:100%;   
     }
     #g-iconbar{  
-        top: 70px;  
-        right: -99px;
+        top: 19px;  
+        right: 9px;
     }
     #nav li{ 
         float:none;
@@ -4006,7 +4398,10 @@ dl.portlet ul.navTree li a:hover{
         height: 5px;
         width: 30px;   
     }
-    #portal-personaltools-wrapper,#portal-languageselector,.socialheader{
+    #portal-languageselector,.socialheader{
+        display:block;   
+    }
+    #portal-personaltools-wrapper{
         display:none;   
     }
     #navibar{
