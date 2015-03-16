@@ -2,16 +2,6 @@ jQuery.fn.exists = function(){return this.length>0;};
 
 function remove_empty_row() {
     var check = $("body div").hasClass("template-layoutedit") || $("body div").hasClass("template-compose");
-    if(check == false)
-        {
-        var rowdiv = $("#content .row .cell"); 
-        
-        $(rowdiv).each(function( index ) {
-            if ($(this).children('div').length === 0) {
-            }
-        });
-
-    }
 }
 
 function cover_full_width() {
@@ -39,15 +29,6 @@ function check_cover_full_width() {
             $("div#full-carousel").remove();
     }
 }
-
-function backupcb_slideshow() {
-    $('.cb-slideshow img:gt(0)').hide();
-    setInterval(function(){
-      $('.cb-slideshow :first-child').fadeOut(10000)
-        .next('img').fadeIn(3000)
-        .end().appendTo('.cb-slideshow');}, 
-        10000);    
-} 
 
 function cb_slideshow() {
     $('.cb-slideshow img:gt(0)').hide();
